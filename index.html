@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiva 2 Urtzi Arostegui</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5ed88d46f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <img class="logoPrincipal" src="images/logogrande.png" alt="Logotipo. Pictograma de un PC con un check sobre un circulo verde. Debajo los signos mayor que, slash, menor que.">
+        <h1 class="titulo">Enciclopedia de Front-End</h1>
+        <nav class="menu_idioma">
+            <a href="">EUS</a>|
+            <a href="">CAT</a>|
+            <a href="" class="seleccionado">ES</a>
+        </nav>
+    </header>
+    <nav class="menu_hrz">
+        <a href="">Module-Bundlers</a>
+        <a href="" class="seleccionado">Lenguajes Front-End</a>
+        <a href="">Preprocesadores</a>
+    </nav>
+    <main>
+        <picture class="img_principal">
+            <source srcset = "images/header_bign.jpg"
+            source media = "(min-width: 1200px)">
+
+            <source srcset = "images/header_mediumn.jpg"
+            source media = "(min-width: 768px) and
+            (max-width: 1199px)">    
+            
+            <source srcset = "images/header_small_focusedn.jpg"
+            source media = "(max-width: 767px)">
+
+            <img class="bordes" src="images/header_big.jpg" alt="Fotografía de una mano dibujando mokups">
+
+
+        </picture>
+        <h2>Las bases del Front-End</h2>
+        <p>A pesar de que hay varios lenguajes que se usan en el front-end, nosotros nos
+            fijaremos en 3 elementos: HTML, CSS y JavaScript (aunque HTML y CSS no son
+            lenguajes de programación propiamente dichos).
+        </p>
+        <section class="fichas">
+            <section class="codigo cjs">
+                <img class="bordes" src="images/js.jpg" alt="Fragmento de código JavaScript">
+                <label for="">¿Qué es JavaScript?</label>
+            </section>
+            <section class="codigo chtml">
+                <img class="bordes" src="images/html.jpg" alt="Fragmento de código HTML">
+                <label for="">¿Qué es HTML?</label>
+            </section>
+            <section class="codigo ccss">
+                <img class="bordes" src="images/css.jpg" alt="Fragmento de código CSS">
+                <label for="">¿Qué es CSS?</label>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Urtzi Arostegui Osinaga - DAW  -  Imágenes obtenidas de:  </p>
+        <a href="https://unsplash.com/es" target="_blank"><i class="fa-brands fa-unsplash"></i></a>
+        <a href="https://unsplash.com/es">Unsplash</a>
+    </footer>
+</body>
+</html>
