@@ -18,6 +18,8 @@ a:hover {
     text-decoration: underline;
 }
 
+/* ETIQUETAS */
+
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
@@ -29,6 +31,31 @@ main{
     flex-direction: column;
 }
 
+h1{
+    font-size: 4.5vw;
+}
+
+h2{
+    padding-left: 2vw;
+    margin-bottom: 0vw;
+}
+
+p{
+    padding-left: 2vw;
+    margin-bottom: 3vw;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CLASES -- IMAGENES */
+
+.logoPrincipal{
+    width: 12vw;
+}
+
 .img_principal{
     display: flex;
     justify-content: center;
@@ -38,6 +65,8 @@ main{
 .bordes{
     border-radius: 2vw;
 }
+
+/* CLASES -- MENUS */
 
 .menu_idioma{
     display: flex;
@@ -58,37 +87,16 @@ main{
     display: flex;
     justify-content: center;
     padding: 1vw;
-    
     font-weight: bold;
 }
+
+/* CLASES -- LENGUAJES */
 
 .codigo{
     display:flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 3vw;
-}
-
-h1{
-    font-size: 4.5vw;
-}
-
-h2{
-    padding-left: 2vw;
-    margin-bottom: 0vw;
-}
-
-p{
-    padding-left: 2vw;
-    margin-bottom: 3vw;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.logoPrincipal{
-    width: 12vw;
 }
 
 .cjs,
@@ -98,10 +106,12 @@ header{
     width: 33%;
 }
 
+/* CLASES -- FOOTER */
+
 .footer{
     display: flex;
     width: 100%;
-    height: 8vw;
+    height: 5vw;
     background-color: #1d2936;
     border-radius: 2vw;
     align-items: center;
@@ -110,7 +120,6 @@ header{
 .footer i{
     font-size: 3vw;
     padding-left: 1vw;
-
 }
 
 .footer p{
@@ -118,7 +127,6 @@ header{
     padding-left: 3vw;
     margin-top: 1vw;
     color: white;
-   
 }
 
 .footer a{
@@ -128,7 +136,7 @@ header{
 }
 
 .footer a:hover{
-    color: black;
+    color: rgb(134, 134, 134);
     
 }
 
@@ -146,10 +154,6 @@ header{
         font-weight: bold;
     }
 
-    .menu_idioma{
-        font-size: 1.5vw;
-    }
-
     .cjs,
     .chtml{
         float: left;
@@ -163,15 +167,8 @@ header{
 }
 
 
-
 @media screen and (max-width: 767px){  /*pantallas pequeñas*/
 
-
-
-    main h2{
-        display: flex;
-        justify-content: center;
-    }
 
     .logoPrincipal{
         display: none;
@@ -182,20 +179,12 @@ header{
 
     
     header{
-        display: flex;
         justify-content: center;
-    }
-
-    .codigo{
-        flex-direction: column;
-        align-items: center;
     }
 
     .menu_idioma{
-        justify-content: center;
-        padding-right: 0vw;
         font-size: 3vw;
-    }
+    } 
 
     .menu_hrz{
         flex-direction: column;
@@ -215,5 +204,9 @@ header{
     .ccss{
         float: left;
         width: 100%;
+    }
+
+    .footer{
+        height: 8vw;
     }
 }
